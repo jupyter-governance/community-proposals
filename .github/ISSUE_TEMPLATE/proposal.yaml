@@ -6,22 +6,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this funding request!
+        We invite community members to submit funding proposals for initiatives that will strengthen 
+        and improve the project ecosystem. Funding is intended for efforts that help grow contributor 
+        capacity and improve the reliability, security, and consistency of Jupyter’s software.
 
-  - type: markdown
-    attributes:
-      value: |
         Please review the process in the [Jupyter Governance](https://github.com/jupyter-governance/community-proposals)
-
-  - type: markdown
-    attributes:
-      value: |
-        Qualifying Information
   - type: input
-    id: initiative
+    id: area
     attributes:
-      label: Initiative
-      description: Which initiative is requesting the funds?
+      label: Area of Jupyter
+      description: Which area of Jupyter is requesting the funds?
       placeholder: an existing Jupyter working group, special interest group, or project
     validations:
       required: true
@@ -36,7 +30,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Problem statement - This section aims to set the stage and boundaries for the problem you are trying to solve. This is not a place to propose solutions, but to define the problem and its impact.
+        Problem statement - This section aims to set the stage and boundaries for the problem
+        you are trying to solve. This is not a place to propose solutions, but to define the problem and its impact.
   - type: input
     id: problem-statement
     attributes:
@@ -54,39 +49,32 @@ body:
   - type: input
     id: why-now
     attributes:
-      label: Why should it be tackled now and by this initiative?
+      label: Why should it be addressed now?
       description: Is this the right place and time for this funding initiative?
     validations:
       required: true
   - type: input
     id: responsible-party
     attributes:
-      label: Who is responsible for doing the work of this funding initiative?
+      label: Who is responsible for doing the work?
       description: This person is the primary contact to oversee the idea
     validations:
       required: true
   - type: input
     id: funding-proposal
     attributes:
-      label: Submit your proposal using the Google Doc Proposal template.
-      description: Submit the link to your Google Doc Proposal [template](https://docs.google.com/document/d/101cNUZbGCWUMn8LbDiSRjL5Q78e_31gN4-FqCiSp47o/edit?usp=sharing).
+      label: Submit the link to your proposal.
+      description: Create your proposal using the [template](https://docs.google.com/document/d/101cNUZbGCWUMn8LbDiSRjL5Q78e_31gN4-FqCiSp47o/edit?usp=sharing).
     validations:
       required: true
-  
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Jupyter Foundation Code of Conduct](https://google.com) to ensure an inclusive environment for participants.
+      description: By submitting this issue, you agree to follow our [Jupyter Foundation Code of Conduct](https://jupyter.org/governance/conduct/code_of_conduct.html) to ensure an inclusive environment for participants.
       options:
         - label: I agree to follow the Jupyter Foundation's Code of Conduct
           required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        The final section is to list the Milestones and Approximate costs associated with the funding initiative. If you prefer, you can submit a Google Sheet or Google Doc in the entry below.
-
   - type: markdown
     attributes:
       value: |
