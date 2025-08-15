@@ -1,0 +1,81 @@
+name: Community Proposal
+description: Submit a proposal for funding.
+title: "[Community Proposal]: "
+labels: ["For Review", "Funding Proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We invite community members to submit funding proposals for initiatives that will strengthen 
+        and improve the project ecosystem. Funding is intended for efforts that help grow contributor 
+        capacity and improve the reliability, security, and consistency of Jupyter’s software.
+
+        Please review the process in the [Jupyter Governance](https://github.com/jupyter-governance/community-proposals)
+  - type: input
+    id: area
+    attributes:
+      label: Area of Jupyter
+      description: Which area of Jupyter is requesting the funds?
+      placeholder: an existing Jupyter working group, special interest group, or project
+    validations:
+      required: true
+  - type: input
+    id: funding-amount
+    attributes:
+      label: Funding Amount
+      description: What is the exact amount of funding you're requesting?
+      placeholder: "$1000"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Problem statement - This section aims to set the stage and boundaries for the problem
+        you are trying to solve. This is not a place to propose solutions, but to define the problem and its impact.
+  - type: input
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What is the problem?
+    validations:
+      required: true
+  - type: input
+    id: affects
+    attributes:
+      label: Who does this affect?
+      description: Who does this problem impact, and for whom is this solution?
+    validations:
+      required: true
+  - type: input
+    id: why-now
+    attributes:
+      label: Why should it be addressed now?
+      description: Is this the right place and time for this funding initiative?
+    validations:
+      required: true
+  - type: input
+    id: responsible-party
+    attributes:
+      label: Who is responsible for doing the work?
+      description: This person is the primary contact to oversee the idea
+    validations:
+      required: true
+  - type: input
+    id: funding-proposal
+    attributes:
+      label: Submit the link to your proposal.
+      description: Create your proposal using the [template](https://docs.google.com/document/d/101cNUZbGCWUMn8LbDiSRjL5Q78e_31gN4-FqCiSp47o/edit?usp=sharing).
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Jupyter Foundation Code of Conduct](https://jupyter.org/governance/conduct/code_of_conduct.html) to ensure an inclusive environment for participants.
+      options:
+        - label: I agree to follow the Jupyter Foundation's Code of Conduct
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for completing this form! If you have any problems, questions or concerns, please email us at [operations@jupyterfoundation.org](mailto:operations@jupyterfoundation.org).
