@@ -65,6 +65,13 @@ body:
       description: This person is the primary contact to oversee the idea
     validations:
       required: true
+   - type: input
+    id: funding-proposal
+    attributes:
+      label: Create your proposal using the [Google Doc Proposal Template](https://docs.google.com/document/d/101cNUZbGCWUMn8LbDiSRjL5Q78e_31gN4-FqCiSp47o/view).
+      description: Submit the link to your Google Doc Proposal.
+    validations:
+      required: true
   - type: checkboxes
     id: terms
     attributes:
